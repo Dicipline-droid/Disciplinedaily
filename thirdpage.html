@@ -4,13 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <a href="index.html"><h1><img src="DD LOGO.jpg" alt="LOGO" width="50">DisicplineDaily</h1></a>
 <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="secondpage.html">About us</a></li>
-    <li><a href="index.html">Contact</a></li>
+    <li><a href="thirdpage.html">Contact</a></li>
     <li><a href="fourthpage.html">Services</a></li>
 </ul>
-<img src="aaa.jpg" alt="background" width="1350" height="300">
+<img src="aaa.jpg" alt="background" class="banner">
+<form>
+    <fieldset>
+    <legend><h1><center>Add Educational Details</center></h1></legend>
+    <label for="Exact Title in Original Language">*Exact Title in Original Language:</label> &nbsp; &nbsp;
+    <input type="text" id="Exact Title in Original Language" name="Exact Title in Original Language"><br> <br>
+    <label for="Title of the Degree Diploma in English or French Language e.g. Bachelor of Science:">*Title of the Degree Diploma in English or French Language e.g. Bachelor of Science:</label> &nbsp; &nbsp; &nbsp;
+    <input type="text" id="Title of the Degree Diploma in English or French Language e.g. Bachelor of Science:" name="Title of the Degree Diploma in English or French Language e.g. Bachelor of Science:"><br> <br>
+    <label for="Degree/Diploma Obtained:">*Degree/Diploma Obtained:</label> &nbsp; &nbsp;
+    <input type="radio" name="Degree/Diploma Obtained:" id="Yes" value="Yes">
+    <label for="Yes">Yes</label>
+    <input type="radio" name="Degree/Diploma Obtained:" id="No" value="No">
+    <label for="No">No</label> <br> <br>
+    <label for="Attended">*Attended:</label> &nbsp;&nbsp;
+            <label for="From">From</label>
+            <input type="date" name="Attended" id="From:" value="From">&nbsp;
+            <label for="To">To</label>
+            <input type="date" name="Attended" id="To" value="To"> <br> <br>
+            <label for="Type of Institution">*Type of Institution:</label>&nbsp;&nbsp;
+            <select name="Type of Institution" id="Type of Institution">
+                <option value="">Your Institution</option>
+                <option value="UI">University of Ibadan</option>
+                <option value="OAU">Obafemi Awolowo University</option>
+                <option value="UNILAG">University Of Lagos</option>
+                <option value="UNIBEN">University Of Benin</option>
+            </select><br> <br>
+            <label for="Country">*Country:</label>&nbsp;&nbsp;
+            <select name="Country" id="Country">
+                <option value="">Your Country</option>
+                <option value="NIG">Nigeria</option>
+                <option value="NIG">Niger</option>
+                <option value="SA">South Africa</option>
+                <option value="BR">Benin Republic</option>
+                <option value="CR">Republic Of Congo</option>
+            </select><br> <br>
+            <label for="City Where attended">*City Where attended:</label>&nbsp;&nbsp;
+            <input type="text" id="City Where attended"><br> <br>
+            <label for="Name of Institution">*Name of Institution:</label>&nbsp;&nbsp;
+            <input type="text" id="Name of Institution"><br> <br>
+            <label for="Institution Web Site">Institution Web Site:</label>&nbsp;&nbsp;
+            <input type="text" id="Institution Web Site"><br> <br>
+            <label for="Main Course of Study">*Main Course of Study:</label>&nbsp;&nbsp;
+            <select name="Main Course of Study" id="Main Course of Study">
+                <option value="">Your Course</option>
+                <option value="CSC">Computer Science</option>
+                <option value="PSY">Psychology</option>
+                <option value="MAT">Mathematics</option>
+                <option value="CLA">Cultural and Language Arts</option>
+            </select><br> <br>
+            <label for="Field of Study">*Field of Study:</label>&nbsp;&nbsp;
+            <select name="Field of Study" id="Field of Study">
+                <option value="">Your field</option>
+                <option value="">Computing</option>
+                <option value="">Social Science</option>
+                <option value="">Education</option>
+            </select><br> <br>
+            <label for="Specialization">Specialization:</label>&nbsp;&nbsp;
+            <input type="text" id="Specialization"><br> <br>
+            <label for="Enrollment Status">*Enrollment Status:</label>&nbsp;&nbsp;
+            <input type="radio" name="Enrollment Status" id="Full_Time" value="Full_Time" >
+            <label for="Full_Time">Full_Time</label>
+            <input type="radio" name="Enrollment Status" id="Part_Time" value="Part_Time">
+            <label for="Part_Time">Part_Time</label><br> <br>
+            <Label for="Teaching Method">*Teaching Method:</Label>&nbsp;&nbsp;
+            <select name="Teaching Method" id="Teaching Method">
+                <option value="">Choose Teaching Method</option>
+                <option value="">Physical</option>
+                <option value="">Online</option>
+            </select> <br> <br>
+             <label for="Additional Comments">Additional Comments:</label>&nbsp;&nbsp;
+            <input type="text" id="Additional Comments"><br> <br>
+            <p>If your exact choice is not listed in the drop-down menus, please select the closest relevant option and explain in the "Additional Comments".</p>
+        </fieldset>
+    </form>
+<br>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form class="login-form">
+        <h1>Login</h1>
+
+        <label>Email</label><br>
+        <input type="email"><br><br>
+
+        <label>Password</label><br>
+        <input type="password"><br><br>
+
+        <input type="checkbox"> Remember Me
+
+        <br><br>
+
+        <input type="submit" value="Log In">
+
+    </form>
+
+</body>
+</html>
