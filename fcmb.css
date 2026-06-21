@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Caveat */
+
+.caveat{
+    background: #fff3cd;
+    color: #856404;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Logo */
+
+.logo{
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Top Bar */
+
+.top-bar{
+    
+    height: 30px;
+    background: #5d2d91;
+}
+
+.business-bar{
+    width: 300px;
+    background: #f7be16;
+    padding: 7px 20px;
+    margin-left: 130px;
+    font-weight: bold;
+}
+
+/* Welcome */
+
+.welcome{
+    width: 80%;
+    margin: 20px auto;
+}
+
+.welcome h3{
+    color: #4b7bc1;
+}
+
+.welcome h1{
+    margin: 10px 0;
+}
+
+.welcome p{
+    color: gray;
+}
+
+.welcome span{
+    color: red;
+    font-weight: bold;
+}
+
+/* Main Container */
+
+.container{
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Login Box */
+
+.login-box{
+    width: 30%;
+    background: white;
+    border: 3px solid purple;
+    padding: 20px;
+}
+
+.login-box label{
+    display: block;
+    margin-top: 15px;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"]{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.remember{
+    margin: 15px 0;
+}
+
+.login-box button{
+    padding: 10px 20px;
+    background: gold;
+    border: none;
+    cursor: pointer;
+}
+
+.login-box button:hover{
+    background: orange;
+}
+
+.login-box a{
+    text-decoration: none;
+    color: dodgerblue;
+    margin-left: 10px;
+}
+
+/* Banner */
+
+.banner{
+    width: 32%;
+    background: linear-gradient(purple, #b0008c);
+    color: white;
+    padding: 30px;
+}
+
+.banner h1{
+    color: gold;
+    margin-bottom: 20px;
+}
+
+/* Info Box */
+
+.info-box{
+    width: 30%;
+    background: white;
+    padding: 20px;
+    border: 1px solid lightgray;
+}
+
+.info-box h2{
+    margin-bottom: 15px;
+}
+
+.info-box p{
+    margin-bottom: 15px;
+}
+
+.info-box button{
+    background: gold;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.info-box button:hover{
+    background: orange;
+}
+
+/* Bottom Section */
+
+.links-section{
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+}
+
+.yellow-box{
+    width: 20%;
+    background: orange;
+    padding: 20px;
+}
+
+.links{
+    width: 80%;
+    background: white;
+    padding: 20px;
+}
+
+.links ul{
+    list-style-position: inside;
+}
+
+.links li{
+    margin-bottom: 10px;
+}
+
+.links a{
+    text-decoration: none;
+    color: #4b7bc1;
+}
+
+.links a:hover{
+    text-decoration: underline;
+}
+
+/* Social */
+
+.social{
+    text-align: center;
+    margin: 30px;
+}
+
+.social a{
+    text-decoration: none;
+    margin: 10px;
+    color: #4b7bc1;
+}
+
+.social a:hover{
+    color: purple;
+}
+
+/* Footer */
+
+footer{
+    background: #444;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
