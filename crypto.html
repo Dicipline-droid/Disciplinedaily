@@ -3,215 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crypto Landing Page</title>
-
-    <link rel="stylesheet" href="crypto.css">
-
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta name="description" content="A responsive crypto, ICO, and Web3 landing page.">
+    <title>Crypto | Discipline Daily</title>
+    <link href="./output.css" rel="stylesheet">
 </head>
-
-<!-- <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="secondpage.html">About us</a></li>
-    <li><a href="thirdpage.html">Contact</a></li>
-    <li><a href="fourthpage.html">Services</a></li>
-    <li><a href="crypto.html">Crypto</a></li>
-    <li><a href="fcmb.html"></a></li>
-</ul> -->
-
-<body>
-
-    <!-- Navigation -->
-
-    <div class="navbar">
-
-        <div class="logo">
-            <i class="fa-brands fa-bitcoin"></i>
-            Crypto
-        </div>
-
-        <div class="menu">
-            <a href="#">Home</a>
-            <a href="#">Features</a>
-            <a href="#">Roadmap</a>
-            <a href="#">Pages</a>
-            <a href="#">Support</a>
-        </div>
-
-        <div class="signin">
-            <a href="#">Sign In</a>
-        </div>
-
+<body class="min-h-screen overflow-x-hidden bg-[#05012c] text-white antialiased">
+<nav class="fixed inset-s-0 top-0 z-20 w-full border-b border-white/10 bg-[#05012c]/90 text-white shadow-lg backdrop-blur" aria-label="Crypto navigation">
+  <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between px-5 py-4 lg:px-8">
+    <a href="index.html" class="flex items-center gap-3" aria-label="Discipline Daily home"><span class="flex h-10 w-10 items-center justify-center rounded-full bg-blue-500 text-xl font-bold text-white shadow-lg shadow-blue-500/30">₿</span><span class="font-serif text-xl font-bold tracking-tight">Crypto</span></a>
+    <button data-collapse-toggle="crypto-navbar" type="button" class="inline-flex h-10 w-10 items-center justify-center rounded-lg text-slate-200 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-blue-400 md:hidden" aria-controls="crypto-navbar" aria-expanded="false"><span class="sr-only">Open main menu</span><svg class="h-6 w-6" aria-hidden="true" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg></button>
+    <div class="hidden w-full md:block md:w-auto" id="crypto-navbar">
+      <ul class="mt-4 flex flex-col gap-1 rounded-xl border border-white/10 bg-[#0d0849] p-3 text-sm font-medium md:mt-0 md:flex-row md:items-center md:gap-7 md:border-0 md:bg-transparent md:p-0">
+        <li><a href="#top" class="block rounded-lg px-3 py-2 text-slate-300 transition hover:bg-white/10 hover:text-white">Home</a></li>
+        <li><a href="#features" class="block rounded-lg px-3 py-2 text-slate-300 transition hover:bg-white/10 hover:text-white">Features</a></li>
+        <li><a href="#roadmap" class="block rounded-lg px-3 py-2 text-slate-300 transition hover:bg-white/10 hover:text-white">Roadmap</a></li>
+        <li><a href="#pages" class="block rounded-lg px-3 py-2 text-slate-300 transition hover:bg-white/10 hover:text-white">Pages</a></li>
+        <li><a href="#support" class="block rounded-lg px-3 py-2 text-slate-300 transition hover:bg-white/10 hover:text-white">Support</a></li>
+        <li><a href="login.html" class="block rounded-full border border-blue-400/60 px-4 py-2 font-semibold text-white transition hover:bg-blue-500">Sign In</a></li>
+      </ul>
     </div>
+  </div>
+</nav>
 
-    <!-- Hero Section -->
+<main id="top">
+  <section class="relative isolate overflow-hidden px-5 pb-24 pt-40 sm:pb-32 lg:px-8 lg:pt-48"><div class="absolute left-1/2 top-24 -z-10 h-96 w-96 -translate-x-1/2 rounded-full bg-blue-600/25 blur-3xl"></div><div class="absolute -right-40 top-48 -z-10 h-80 w-80 rounded-full bg-indigo-600/20 blur-3xl"></div><div class="mx-auto max-w-4xl text-center"><p class="mb-6 text-sm font-bold uppercase tracking-[0.28em] text-blue-300">The future is being built</p><h1 class="font-serif text-5xl font-bold leading-[1.02] tracking-tight sm:text-7xl">Tailwind CSS Template for <span class="text-blue-400">Crypto, ICO and Web3</span></h1><p class="mx-auto mt-7 max-w-2xl text-lg leading-8 text-slate-300">Crypto Currency, Blockchain, ICO, Web3 related website template crafted with modern design.</p><div class="mt-10 flex flex-wrap items-center justify-center gap-3" aria-label="Supported crypto concepts"><span class="flex h-12 w-12 items-center justify-center rounded-full bg-orange-500 text-2xl font-bold shadow-lg shadow-orange-500/25">₿</span><span class="flex h-12 w-12 items-center justify-center rounded-full bg-indigo-500 text-xl font-bold shadow-lg shadow-indigo-500/25">Ξ</span><span class="flex h-12 w-12 items-center justify-center rounded-full bg-blue-500 text-xl font-bold shadow-lg shadow-blue-500/25">◈</span><span class="flex h-12 w-12 items-center justify-center rounded-full bg-emerald-500 text-xl font-bold shadow-lg shadow-emerald-500/25">$</span><span class="flex h-12 w-12 items-center justify-center rounded-full bg-cyan-500 text-xl font-bold shadow-lg shadow-cyan-500/25">⌁</span></div><a href="#features" class="mt-10 inline-flex items-center justify-center rounded-full bg-blue-500 px-7 py-3 font-bold text-white shadow-xl shadow-blue-500/25 transition hover:bg-blue-400 focus:outline-none focus:ring-4 focus:ring-blue-400/40">Buy Tokens 47% Off <span class="ml-2" aria-hidden="true">&#8594;</span></a></div></section>
 
-    <div class="hero">
+  <section id="pages" class="border-y border-white/10 bg-white/3 px-5 py-14 lg:px-8"><div class="mx-auto max-w-7xl"><h2 class="text-center text-sm font-bold uppercase tracking-[0.18em] text-slate-400">Join the 20,000+ companies using our platform</h2><div class="mt-9 grid grid-cols-2 gap-5 text-center text-xl font-bold text-slate-500 sm:grid-cols-5"><div class="rounded-xl border border-white/10 px-4 py-5 transition hover:border-blue-400/50 hover:text-blue-300">UIblock</div><div class="rounded-xl border border-white/10 px-4 py-5 transition hover:border-blue-400/50 hover:text-blue-300">TailGrids</div><div class="rounded-xl border border-white/10 px-4 py-5 transition hover:border-blue-400/50 hover:text-blue-300">Lineicons</div><div class="rounded-xl border border-white/10 px-4 py-5 transition hover:border-blue-400/50 hover:text-blue-300">Ayro UI</div><div class="col-span-2 rounded-xl border border-white/10 px-4 py-5 transition hover:border-blue-400/50 hover:text-blue-300 sm:col-span-1">PlainAdmin</div></div></div></section>
 
-        <h1>
-            Tailwind CSS Template for
-            <br>
-            Crypto, ICO and Web3
-        </h1>
+  <section id="features" class="mx-auto max-w-7xl px-5 py-20 lg:px-8 lg:py-28"><div class="mx-auto max-w-2xl text-center"><p class="text-sm font-bold uppercase tracking-[0.22em] text-blue-400">CRYPTO FEATURE</p><h2 class="mt-4 font-serif text-4xl font-bold sm:text-5xl">Best Features</h2><p class="mt-5 leading-7 text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div><div class="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+    <article class="group rounded-2xl border border-white/10 bg-white/4 p-7 transition duration-300 hover:-translate-y-1 hover:border-blue-400/50 hover:bg-blue-500/8 hover:shadow-2xl hover:shadow-blue-950/40"><div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-500/15 text-2xl text-blue-300 ring-1 ring-blue-400/30">&#128737;</div><h3 class="mt-7 text-xl font-bold">Safe &amp; Secure</h3><p class="mt-3 leading-7 text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></article>
+    <article class="group rounded-2xl border border-white/10 bg-white/4 p-7 transition duration-300 hover:-translate-y-1 hover:border-blue-400/50 hover:bg-blue-500/8 hover:shadow-2xl hover:shadow-blue-950/40"><div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-500/15 text-2xl text-blue-300 ring-1 ring-blue-400/30">&#127873;</div><h3 class="mt-7 text-xl font-bold">Early Bonus</h3><p class="mt-3 leading-7 text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></article>
+    <article class="group rounded-2xl border border-white/10 bg-white/4 p-7 transition duration-300 hover:-translate-y-1 hover:border-blue-400/50 hover:bg-blue-500/8 hover:shadow-2xl hover:shadow-blue-950/40"><div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-500/15 text-2xl text-blue-300 ring-1 ring-blue-400/30">&#128077;</div><h3 class="mt-7 text-xl font-bold">Universal Access</h3><p class="mt-3 leading-7 text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></article>
+    <article class="group rounded-2xl border border-white/10 bg-white/4 p-7 transition duration-300 hover:-translate-y-1 hover:border-blue-400/50 hover:bg-blue-500/8 hover:shadow-2xl hover:shadow-blue-950/40"><div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-500/15 text-2xl text-blue-300 ring-1 ring-blue-400/30">&#128451;</div><h3 class="mt-7 text-xl font-bold">Secure Storage</h3><p class="mt-3 leading-7 text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></article>
+    <article class="group rounded-2xl border border-white/10 bg-white/4 p-7 transition duration-300 hover:-translate-y-1 hover:border-blue-400/50 hover:bg-blue-500/8 hover:shadow-2xl hover:shadow-blue-950/40"><div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-500/15 text-2xl text-blue-300 ring-1 ring-blue-400/30">&#128176;</div><h3 class="mt-7 text-xl font-bold">Low Cost</h3><p class="mt-3 leading-7 text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></article>
+    <article class="group rounded-2xl border border-white/10 bg-white/4 p-7 transition duration-300 hover:-translate-y-1 hover:border-blue-400/50 hover:bg-blue-500/8 hover:shadow-2xl hover:shadow-blue-950/40"><div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-500/15 text-2xl text-blue-300 ring-1 ring-blue-400/30">&#128200;</div><h3 class="mt-7 text-xl font-bold">Several Profit</h3><p class="mt-3 leading-7 text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></article>
+  </div></section>
 
-        <p>
-            Crypto Currency, Blockchain, ICO, Web3 related website template
-            crafted with modern design.
-        </p>
+  <section id="roadmap" class="mx-auto max-w-7xl px-5 pb-20 lg:px-8"><div class="rounded-3xl border border-blue-400/20 bg-linear-to-r from-blue-950/70 to-indigo-950/70 px-6 py-10 sm:px-10 lg:flex lg:items-center lg:justify-between"><div><p class="text-sm font-bold uppercase tracking-[0.2em] text-blue-300">Roadmap</p><h2 class="mt-3 font-serif text-3xl font-bold">Build with confidence.</h2><p class="mt-3 max-w-xl leading-7 text-slate-300">A clear foundation for teams exploring blockchain, digital assets, and the next generation of the web.</p></div><a href="#support" class="mt-7 inline-flex items-center justify-center rounded-full bg-white px-6 py-3 font-bold text-[#05012c] transition hover:bg-blue-100 lg:mt-0">Learn more <span class="ml-2" aria-hidden="true">&#8594;</span></a></div></section>
+</main>
 
-        <div class="coins">
-
-            <span><i class="fa-brands fa-bitcoin"></i></span>
-            <span><i class="fa-brands fa-ethereum"></i></span>
-            <span><i class="fa-solid fa-coins"></i></span>
-            <span><i class="fa-solid fa-dollar-sign"></i></span>
-            <span><i class="fa-solid fa-money-bill"></i></span>
-
-        </div>
-
-        <button>Buy Tokens 47% Off</button>
-
-    </div>
-
-    <!-- Companies -->
-
-    <div class="companies">
-
-        <h2>Join the 20,000+ companies using our platform</h2>
-
-        <div class="company">
-            UIblock
-        </div>
-
-        <div class="company">
-            TailGrids
-        </div>
-
-        <div class="company">
-            Lineicons
-        </div>
-
-        <div class="company">
-            Ayro UI
-        </div>
-
-        <div class="company">
-            PlainAdmin
-        </div>
-
-    </div>
-
-    <!-- Features -->
-
-    <div class="features">
-
-        <h4>CRYPTO FEATURE</h4>
-
-        <h1>Best Features</h1>
-
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </p>
-
-        <!-- Card 1 -->
-
-        <div class="card">
-
-            <div class="icon">
-                <i class="fa-solid fa-shield"></i>
-            </div>
-
-            <h3>Safe & Secure</h3>
-
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-
-        </div>
-
-        <!-- Card 2 -->
-
-        <div class="card">
-
-            <div class="icon">
-                <i class="fa-solid fa-gift"></i>
-            </div>
-
-            <h3>Early Bonus</h3>
-
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-
-        </div>
-
-        <!-- Card 3 -->
-
-        <div class="card">
-
-            <div class="icon">
-                <i class="fa-solid fa-thumbs-up"></i>
-            </div>
-
-            <h3>Universal Access</h3>
-
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-
-        </div>
-
-        <!-- Card 4 -->
-
-        <div class="card">
-
-            <div class="icon">
-                <i class="fa-solid fa-database"></i>
-            </div>
-
-            <h3>Secure Storage</h3>
-
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-
-        </div>
-
-        <!-- Card 5 -->
-
-        <div class="card">
-
-            <div class="icon">
-                <i class="fa-solid fa-wallet"></i>
-            </div>
-
-            <h3>Low Cost</h3>
-
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-
-        </div>
-
-        <!-- Card 6 -->
-
-        <div class="card">
-
-            <div class="icon">
-                <i class="fa-solid fa-chart-line"></i>
-            </div>
-
-            <h3>Several Profit</h3>
-
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-
-        </div>
-
-    </div>
-
+<footer id="support" class="border-t border-white/10 bg-[#03001f] px-5 py-8 text-center text-sm text-slate-400"><p>&copy; 2026 Discipline Daily Crypto. Built for the decentralized future.</p></footer>
+<script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
 </body>
 </html>

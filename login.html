@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sign in to your Discipline Daily account.">
+    <title>Login | Discipline Daily</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="min-h-screen bg-amber-50 text-slate-900 antialiased">
+<nav class="fixed inset-s-0 top-0 z-20 w-full border-b border-white/10 bg-slate-950/95 text-white shadow-lg backdrop-blur" aria-label="Main navigation">
+  <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between px-5 py-4 lg:px-8">
+    <a href="index.html" class="flex items-center gap-3" aria-label="Discipline Daily home"><img src="DDLOGO.jpg" alt="Discipline Daily logo" width="38" height="38" class="h-9 w-9 rounded-full object-cover ring-2 ring-amber-300/70"><span class="font-serif text-xl font-bold tracking-tight">Discipline Daily</span></a>
+    <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex h-10 w-10 items-center justify-center rounded-lg text-slate-200 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-amber-300 md:hidden" aria-controls="navbar-dropdown" aria-expanded="false"><span class="sr-only">Open main menu</span><svg class="h-6 w-6" aria-hidden="true" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg></button>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+      <ul class="mt-4 flex flex-col gap-1 rounded-xl border border-white/10 bg-slate-900 p-3 text-sm font-medium md:mt-0 md:flex-row md:items-center md:gap-7 md:border-0 md:bg-transparent md:p-0">
+        <li><a href="index.html" class="block rounded-lg px-3 py-2 text-slate-300 transition hover:bg-white/10 hover:text-white">Home</a></li>
+        <li><a href="secondpage.html" class="block rounded-lg px-3 py-2 text-slate-300 transition hover:bg-white/10 hover:text-white">About Us</a></li>
+        <li><a href="thirdpage.html" class="block rounded-lg px-3 py-2 text-slate-300 transition hover:bg-white/10 hover:text-white">Education</a></li>
+        <li><a href="fourthpage.html" class="block rounded-lg px-3 py-2 text-slate-300 transition hover:bg-white/10 hover:text-white">Services</a></li>
+        <li class="relative"><button id="dropdownNavbarButton" data-dropdown-toggle="dropdownNavbar" class="flex w-full items-center justify-between gap-2 rounded-lg bg-amber-300 px-3 py-2 font-semibold text-slate-950 md:w-auto" aria-expanded="false">Projects<svg class="h-4 w-4" aria-hidden="true" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg></button><div id="dropdownNavbar" class="z-10 hidden w-48 divide-y divide-slate-700 rounded-xl border border-slate-700 bg-slate-900 shadow-xl"><ul class="p-2 text-sm font-medium" aria-labelledby="dropdownNavbarButton"><li><a href="crypto.html" class="block rounded-lg px-3 py-2 text-slate-300 hover:bg-slate-800 hover:text-amber-300">Crypto dashboard</a></li><li><a href="fcmb.html" class="block rounded-lg px-3 py-2 text-slate-300 hover:bg-slate-800 hover:text-amber-300">FCMB login</a></li><li><a href="login.html" class="block rounded-lg px-3 py-2 text-slate-300 hover:bg-slate-800 hover:text-amber-300">Discipline Daily login</a></li></ul></div></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="mx-auto flex min-h-screen max-w-7xl items-center px-5 pb-16 pt-32 lg:px-8">
+  <div class="grid w-full overflow-hidden rounded-4xl bg-slate-950 shadow-2xl lg:grid-cols-[0.9fr_1.1fr]">
+    <section class="relative hidden min-h-152 overflow-hidden p-12 text-white lg:flex lg:flex-col lg:justify-between"><img src="backg.jpg" alt="A textured creative workspace" class="absolute inset-0 h-full w-full object-cover opacity-45"><div class="absolute inset-0 bg-linear-to-br from-slate-950 via-slate-950/80 to-orange-900/70"></div><div class="relative"><p class="text-sm font-bold uppercase tracking-[0.25em] text-amber-300">Welcome back</p><h1 class="mt-5 max-w-md font-serif text-5xl font-bold leading-tight">Return to the work that matters.</h1></div><p class="relative max-w-sm leading-7 text-slate-300">Keep your ideas, routines, and next steps close. One focused day is enough to begin again.</p></section>
+    <section class="bg-white px-6 py-12 sm:px-12 lg:px-16 lg:py-16" aria-labelledby="login-heading">
+      <div class="mx-auto max-w-md"><p class="text-sm font-bold uppercase tracking-[0.2em] text-orange-700">Your workspace</p><h2 id="login-heading" class="mt-3 font-serif text-4xl font-bold text-slate-950">Sign in</h2><p class="mt-3 leading-7 text-slate-600">Continue building your daily practice.</p>
+        <div class="mt-8 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm leading-6 text-slate-600" role="note">This is a student project login form. No credentials are transmitted or stored.</div>
+        <form action="#" method="post" class="mt-8 space-y-5">
+          <div><label for="email" class="mb-2 block text-sm font-semibold text-slate-700">Email address</label><input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" required class="block w-full rounded-xl border border-orange-200 bg-amber-50 px-4 py-3 outline-none transition placeholder:text-slate-400 focus:border-orange-600 focus:ring-4 focus:ring-orange-100"></div>
+          <div><div class="mb-2 flex items-center justify-between gap-4"><label for="password" class="block text-sm font-semibold text-slate-700">Password</label><a href="#" class="text-sm font-semibold text-orange-700 hover:text-orange-900">Forgot password?</a></div><input type="password" id="password" name="password" autocomplete="current-password" placeholder="Enter your password" required class="block w-full rounded-xl border border-orange-200 bg-amber-50 px-4 py-3 outline-none transition placeholder:text-slate-400 focus:border-orange-600 focus:ring-4 focus:ring-orange-100"></div>
+          <label class="flex items-center gap-3 text-sm text-slate-600"><input type="checkbox" name="remember" class="h-4 w-4 rounded border-orange-300 accent-orange-700">Remember me</label>
+          <button type="submit" class="w-full rounded-full bg-orange-700 px-6 py-3 font-bold text-white transition hover:bg-orange-800 focus:outline-none focus:ring-4 focus:ring-orange-200">Log in</button>
+        </form>
+        <p class="mt-8 text-center text-sm text-slate-600">New to Discipline Daily? <a href="thirdpage.html" class="font-bold text-orange-700 hover:text-orange-900">Create your profile</a></p>
+      </div>
+    </section>
+  </div>
+</main>
+<footer class="border-t border-orange-200 bg-amber-100 px-5 py-8 text-center text-sm text-slate-600"><p>&copy; 2026 Discipline Daily. Built for steady progress.</p></footer>
+<script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+</body>
+</html>
