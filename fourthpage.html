@@ -1,38 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discipline Daily services and weekly learning schedule.">
-    <title>Services | Discipline Daily</title>
-    <link href="./output.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discipline Daily services and weekly learning schedule.">
+  <title>Services | Discipline Daily</title>
+  <link href="./output.css" rel="stylesheet">
 </head>
+
 <body class="min-h-screen bg-amber-50 text-slate-900 antialiased">
-<nav class="fixed inset-s-0 top-0 z-20 w-full border-b border-white/10 bg-slate-950/95 text-white shadow-lg backdrop-blur" aria-label="Main navigation">
-  <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between px-5 py-4 lg:px-8">
-    <a href="index.html" class="flex items-center gap-3" aria-label="Discipline Daily home"><img src="DDLOGO.jpg" alt="Discipline Daily logo" width="38" height="38" class="h-9 w-9 rounded-full object-cover ring-2 ring-amber-300/70"><span class="font-serif text-xl font-bold tracking-tight">Discipline Daily</span></a>
-    <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex h-10 w-10 items-center justify-center rounded-lg text-slate-200 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-amber-300 md:hidden" aria-controls="navbar-dropdown" aria-expanded="false"><span class="sr-only">Open main menu</span><svg class="h-6 w-6" aria-hidden="true" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg></button>
-    <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-      <ul class="mt-4 flex flex-col gap-1 rounded-xl border border-white/10 bg-slate-900 p-3 text-sm font-medium md:mt-0 md:flex-row md:items-center md:gap-7 md:border-0 md:bg-transparent md:p-0">
-        <li><a href="index.html" class="block rounded-lg px-3 py-2 text-slate-300 transition hover:bg-white/10 hover:text-white">Home</a></li>
-        <li><a href="secondpage.html" class="block rounded-lg px-3 py-2 text-slate-300 transition hover:bg-white/10 hover:text-white">About Us</a></li>
-        <li><a href="thirdpage.html" class="block rounded-lg px-3 py-2 text-slate-300 transition hover:bg-white/10 hover:text-white">Contact</a></li>
-        <li><a href="fourthpage.html" class="block rounded-lg bg-amber-300 px-3 py-2 font-semibold text-slate-950" aria-current="page">Services</a></li>
-        <li class="relative"><button id="dropdownNavbarButton" data-dropdown-toggle="dropdownNavbar" class="flex w-full items-center justify-between gap-2 rounded-lg px-3 py-2 text-slate-300 transition hover:bg-white/10 hover:text-white md:w-auto" aria-expanded="false">Projects<svg class="h-4 w-4" aria-hidden="true" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg></button><div id="dropdownNavbar" class="z-10 hidden w-48 divide-y divide-slate-700 rounded-xl border border-slate-700 bg-slate-900 shadow-xl"><ul class="p-2 text-sm font-medium" aria-labelledby="dropdownNavbarButton"><li><a href="crypto.html" class="block rounded-lg px-3 py-2 text-slate-300 hover:bg-slate-800 hover:text-amber-300">Crypto dashboard</a></li><li><a href="fcmb.html" class="block rounded-lg px-3 py-2 text-slate-300 hover:bg-slate-800 hover:text-amber-300">FCMB login</a></li><li><a href="login.html" class="block rounded-lg px-3 py-2 text-slate-300 hover:bg-slate-800 hover:text-amber-300">Discipline Daily login</a></li></ul></div></li>
-      </ul>
+  <nav
+    class="fixed inset-s-0 top-0 z-20 w-full border-b border-white/10 bg-slate-950/95 text-white shadow-lg backdrop-blur"
+    aria-label="Main navigation">
+    <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between px-5 py-4 lg:px-8">
+      <a href="index.html" class="flex items-center gap-3" aria-label="Discipline Daily home"><img src="DDLOGO.jpg"
+          alt="Discipline Daily logo" width="38" height="38"
+          class="h-9 w-9 rounded-full object-cover ring-2 ring-amber-300/70"><span
+          class="font-serif text-xl font-bold tracking-tight">Discipline Daily</span></a>
+      <button data-collapse-toggle="navbar-dropdown" type="button"
+        class="inline-flex h-10 w-10 items-center justify-center rounded-lg text-slate-200 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-amber-300 md:hidden"
+        aria-controls="navbar-dropdown" aria-expanded="false"><span class="sr-only">Open main menu</span><svg
+          class="h-6 w-6" aria-hidden="true" fill="none" viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" />
+        </svg></button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+        <ul
+          class="mt-4 flex flex-col gap-1 rounded-xl border border-white/10 bg-slate-900 p-3 text-sm font-medium md:mt-0 md:flex-row md:items-center md:gap-7 md:border-0 md:bg-transparent md:p-0">
+          <li><a href="index.html"
+              class="block rounded-lg px-3 py-2 text-slate-300 transition hover:bg-white/10 hover:text-white">Home</a>
+          </li>
+          <li><a href="secondpage.html"
+              class="block rounded-lg px-3 py-2 text-slate-300 transition hover:bg-white/10 hover:text-white">About
+              Us</a></li>
+          <li><a href="thirdpage.html"
+              class="block rounded-lg px-3 py-2 text-slate-300 transition hover:bg-white/10 hover:text-white">Contact</a>
+          </li>
+          <li><a href="fourthpage.html" class="block rounded-lg bg-amber-300 px-3 py-2 font-semibold text-slate-950"
+              aria-current="page">Services</a></li>
+          <li class="relative"><button id="dropdownNavbarButton" data-dropdown-toggle="dropdownNavbar"
+              class="flex w-full items-center justify-between gap-2 rounded-lg px-3 py-2 text-slate-300 transition hover:bg-white/10 hover:text-white md:w-auto"
+              aria-expanded="false">Projects<svg class="h-4 w-4" aria-hidden="true" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m19 9-7 7-7-7" />
+              </svg></button>
+            <div id="dropdownNavbar"
+              class="z-10 hidden w-48 divide-y divide-slate-700 rounded-xl border border-slate-700 bg-slate-900 shadow-xl">
+              <ul class="p-2 text-sm font-medium" aria-labelledby="dropdownNavbarButton">
+                <li><a href="crypto.html"
+                    class="block rounded-lg px-3 py-2 text-slate-300 hover:bg-slate-800 hover:text-amber-300">Crypto
+                    dashboard</a></li>
+                <li><a href="fcmb.html"
+                    class="block rounded-lg px-3 py-2 text-slate-300 hover:bg-slate-800 hover:text-amber-300">FCMB
+                    login</a></li>
+                <li><a href="login.html"
+                    class="block rounded-lg px-3 py-2 text-slate-300 hover:bg-slate-800 hover:text-amber-300">Discipline
+                    Daily login</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<main class="mx-auto max-w-7xl px-5 pb-20 pt-32 lg:px-8">
-  <header class="relative overflow-hidden rounded-4xl bg-slate-950 px-6 py-14 text-white shadow-2xl sm:px-12 lg:px-20 lg:py-20"><div class="absolute -right-24 -top-24 h-80 w-80 rounded-full bg-orange-700/30 blur-3xl"></div><div class="relative max-w-3xl"><p class="text-sm font-bold uppercase tracking-[0.25em] text-amber-300">Structure for the week</p><h1 class="mt-4 font-serif text-5xl font-bold leading-tight tracking-tight sm:text-6xl">Services and schedules that keep learning moving.</h1><p class="mt-6 max-w-2xl text-lg leading-8 text-slate-300">Use the timetable below to find your weekly rhythm, then explore the detailed sessions by day, venue, and focus.</p></div></header>
+  <main class="mx-auto max-w-7xl px-5 pb-20 pt-32 lg:px-8">
+    <header
+      class="relative overflow-hidden rounded-4xl bg-slate-950 px-6 py-14 text-white shadow-2xl sm:px-12 lg:px-20 lg:py-20">
+      <div class="absolute -right-24 -top-24 h-80 w-80 rounded-full bg-orange-700/30 blur-3xl"></div>
+      <div class="relative max-w-3xl">
+        <p class="text-sm font-bold uppercase tracking-[0.25em] text-amber-300">Structure for the week</p>
+        <h1 class="mt-4 font-serif text-5xl font-bold leading-tight tracking-tight sm:text-6xl">Services and schedules
+          that keep learning moving.</h1>
+        <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-300">Use the timetable below to find your weekly rhythm,
+          then explore the detailed sessions by day, venue, and focus.</p>
+      </div>
+    </header>
 
-  <section class="mt-12" aria-labelledby="weekly-timetable-heading"><div class="mb-6 flex flex-col justify-between gap-3 sm:flex-row sm:items-end"><div><p class="text-sm font-bold uppercase tracking-[0.2em] text-orange-700">Weekly rhythm</p><h2 id="weekly-timetable-heading" class="mt-2 font-serif text-4xl font-bold text-slate-950">Time Table</h2></div><p class="max-w-sm text-sm leading-6 text-slate-600">A quick view of the recurring subjects across the week.</p></div><div class="overflow-x-auto rounded-2xl border border-orange-200 bg-white shadow-sm"><table class="w-full min-w-170 border-collapse text-left text-sm"><caption class="sr-only">Time Table</caption><thead><tr class="bg-slate-950 text-white"><th scope="col" class="w-28 px-5 py-4 font-semibold">Hours</th><th scope="col" class="px-5 py-4 font-semibold">Mon</th><th scope="col" class="px-5 py-4 font-semibold">Tue</th><th scope="col" class="px-5 py-4 font-semibold">Wed</th><th scope="col" class="px-5 py-4 font-semibold">Thur</th><th scope="col" class="px-5 py-4 font-semibold">Fri</th></tr></thead><tbody class="divide-y divide-orange-100"><tr><th scope="row" rowspan="2" class="bg-orange-50 px-5 py-4 align-top font-bold text-orange-800">Hours</th><td class="px-5 py-4">Science</td><td class="px-5 py-4">Math</td><td class="px-5 py-4">Science</td><td class="px-5 py-4">Math</td><td class="px-5 py-4">Arts</td></tr><tr class="bg-amber-50/50"><td class="px-5 py-4">Science</td><td class="px-5 py-4">Math</td><td class="px-5 py-4">Science</td><td class="px-5 py-4">Math</td><td class="px-5 py-4">Arts</td></tr><tr><th scope="row" class="bg-orange-100 px-5 py-4 font-bold text-orange-800">Break</th><td colspan="5" class="bg-amber-100 px-5 py-4 text-center font-bold text-orange-800">Lunch</td></tr><tr class="bg-amber-50/50"><th scope="row" rowspan="2" class="bg-orange-50 px-5 py-4 align-top font-bold text-orange-800">Hours</th><td class="px-5 py-4">Science</td><td class="px-5 py-4">Math</td><td class="px-5 py-4">Science</td><td class="px-5 py-4">Math</td><td rowspan="2" class="bg-orange-700 px-5 py-4 text-center font-bold text-white">Projects</td></tr><tr><td class="px-5 py-4">Science</td><td class="px-5 py-4">Math</td><td class="px-5 py-4">Science</td><td class="px-5 py-4">Math</td></tr></tbody></table></div></section>
+    <section class="mt-12" aria-labelledby="weekly-timetable-heading">
+      <div class="mb-6 flex flex-col justify-between gap-3 sm:flex-row sm:items-end">
+        <div>
+          <p class="text-sm font-bold uppercase tracking-[0.2em] text-orange-700">Weekly rhythm</p>
+          <h2 id="weekly-timetable-heading" class="mt-2 font-serif text-4xl font-bold text-slate-950">Time Table</h2>
+        </div>
+        <p class="max-w-sm text-sm leading-6 text-slate-600">A quick view of the recurring subjects across the week.</p>
+      </div>
+      <div class="overflow-x-auto rounded-2xl border border-orange-200 bg-white shadow-sm">
+        <table class="w-full min-w-170 border-collapse text-left text-sm">
+          <caption class="sr-only">Time Table</caption>
+          <thead>
+            <tr class="bg-slate-950 text-white">
+              <th scope="col" class="w-28 px-5 py-4 font-semibold">Hours</th>
+              <th scope="col" class="px-5 py-4 font-semibold">Mon</th>
+              <th scope="col" class="px-5 py-4 font-semibold">Tue</th>
+              <th scope="col" class="px-5 py-4 font-semibold">Wed</th>
+              <th scope="col" class="px-5 py-4 font-semibold">Thur</th>
+              <th scope="col" class="px-5 py-4 font-semibold">Fri</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-orange-100">
+            <tr>
+              <th scope="row" rowspan="2" class="bg-orange-50 px-5 py-4 align-top font-bold text-orange-800">Hours</th>
+              <td class="px-5 py-4">Science</td>
+              <td class="px-5 py-4">Math</td>
+              <td class="px-5 py-4">Science</td>
+              <td class="px-5 py-4">Math</td>
+              <td class="px-5 py-4">Arts</td>
+            </tr>
+            <tr class="bg-amber-50/50">
+              <td class="px-5 py-4">Science</td>
+              <td class="px-5 py-4">Math</td>
+              <td class="px-5 py-4">Science</td>
+              <td class="px-5 py-4">Math</td>
+              <td class="px-5 py-4">Arts</td>
+            </tr>
+            <tr>
+              <th scope="row" class="bg-orange-100 px-5 py-4 font-bold text-orange-800">Break</th>
+              <td colspan="5" class="bg-amber-100 px-5 py-4 text-center font-bold text-orange-800">Lunch</td>
+            </tr>
+            <tr class="bg-amber-50/50">
+              <th scope="row" rowspan="2" class="bg-orange-50 px-5 py-4 align-top font-bold text-orange-800">Hours</th>
+              <td class="px-5 py-4">Science</td>
+              <td class="px-5 py-4">Math</td>
+              <td class="px-5 py-4">Science</td>
+              <td class="px-5 py-4">Math</td>
+              <td rowspan="2" class="bg-orange-700 px-5 py-4 text-center font-bold text-white">Projects</td>
+            </tr>
+            <tr>
+              <td class="px-5 py-4">Science</td>
+              <td class="px-5 py-4">Math</td>
+              <td class="px-5 py-4">Science</td>
+              <td class="px-5 py-4">Math</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-  <section class="mt-16" aria-labelledby="session-schedule-heading"><div class="mb-6 flex flex-col justify-between gap-3 sm:flex-row sm:items-end"><div><p class="text-sm font-bold uppercase tracking-[0.2em] text-orange-700">Detailed sessions</p><h2 id="session-schedule-heading" class="mt-2 font-serif text-4xl font-bold text-slate-950">Learning Schedule</h2></div><p class="max-w-sm text-sm leading-6 text-slate-600">Browse horizontally on smaller screens to see every session column.</p></div><div class="overflow-x-auto rounded-2xl border border-orange-200 bg-white shadow-sm"><table class="w-full min-w-225 border-collapse text-left text-sm"><caption class="sr-only">Detailed weekly learning schedule</caption><thead><tr class="bg-slate-950 text-white"><th scope="col" rowspan="2" class="border-r border-slate-700 px-5 py-4 font-semibold">Days</th><th scope="col" rowspan="2" class="border-r border-slate-700 px-5 py-4 font-semibold">Venue</th><th scope="col" class="px-5 py-4 text-center font-semibold">Morning Session</th><th scope="col" class="px-5 py-4 text-center font-semibold">Afternoon Session</th><th scope="col" class="px-5 py-4 text-center font-semibold">Afternoon Session</th></tr><tr class="bg-slate-800 text-slate-200"><th scope="col" class="px-5 py-3 text-center text-xs font-semibold uppercase tracking-wider">9am-12pm</th><th scope="col" class="px-5 py-3 text-center text-xs font-semibold uppercase tracking-wider">12pm-3pm</th><th scope="col" class="px-5 py-3 text-center text-xs font-semibold uppercase tracking-wider">3pm-5:30pm</th></tr></thead><tbody class="divide-y divide-orange-100"><tr><th scope="row" rowspan="2" class="bg-orange-50 px-5 py-4 font-bold text-orange-800">Monday</th><td class="px-5 py-4 font-semibold text-slate-700">Room1</td><td class="px-5 py-4">Html and Git</td><td class="px-5 py-4">Javascript</td><td class="px-5 py-4">Basic Computer A</td></tr><tr class="bg-amber-50/50"><td class="px-5 py-4 font-semibold text-slate-700">Room2</td><td class="px-5 py-4">SQL and Video Editing</td><td class="px-5 py-4">Graphics Design</td><td class="px-5 py-4 text-slate-400">X</td></tr><tr><th scope="row" rowspan="2" class="bg-orange-50 px-5 py-4 font-bold text-orange-800">Tuesday</th><td class="px-5 py-4 font-semibold text-slate-700">Room1</td><td class="px-5 py-4">Basic Computer B</td><td class="px-5 py-4 text-slate-400">X</td><td class="px-5 py-4 text-slate-400">X</td></tr><tr class="bg-amber-50/50"><td class="px-5 py-4 font-semibold text-slate-700">Room2</td><td class="px-5 py-4">SQL</td><td class="px-5 py-4 text-slate-400">X</td><td class="px-5 py-4 text-slate-400">X</td></tr><tr><th scope="row" rowspan="2" class="bg-orange-50 px-5 py-4 font-bold text-orange-800">Wednesday</th><td class="px-5 py-4 font-semibold text-slate-700">Room1</td><td class="px-5 py-4">Html and Git</td><td class="px-5 py-4">Javascript</td><td class="px-5 py-4">Basic Computer A</td></tr><tr class="bg-amber-50/50"><td class="px-5 py-4 font-semibold text-slate-700">Room2</td><td class="px-5 py-4">Video Editing</td><td class="px-5 py-4">Graphic Design</td><td class="px-5 py-4 text-slate-400">X</td></tr><tr><th scope="row" rowspan="2" class="bg-orange-50 px-5 py-4 font-bold text-orange-800">Thursday</th><td class="px-5 py-4 font-semibold text-slate-700">Room1</td><td class="px-5 py-4">Basic Computer B</td><td class="px-5 py-4">A.I Powered Content Generation</td><td class="px-5 py-4 text-slate-400">X</td></tr><tr class="bg-amber-50/50"><td class="px-5 py-4 font-semibold text-slate-700">Room2</td><td class="px-5 py-4">SQL and Video Editing</td><td class="px-5 py-4">Graphic Design</td><td class="px-5 py-4 text-slate-400">X</td></tr><tr><th scope="row" rowspan="2" class="bg-orange-50 px-5 py-4 font-bold text-orange-800">Friday</th><td class="px-5 py-4 font-semibold text-slate-700">Room1</td><td class="px-5 py-4">Html and Git</td><td class="px-5 py-4">Javascript</td><td class="px-5 py-4">Basic Computer A</td></tr><tr class="bg-amber-50/50"><td class="px-5 py-4 font-semibold text-slate-700">Room2</td><td class="px-5 py-4">Basic Computer B</td><td class="px-5 py-4 text-slate-400">X</td><td class="px-5 py-4 text-slate-400">X</td></tr><tr><th scope="row" class="bg-orange-50 px-5 py-4 font-bold text-orange-800">Saturday</th><td class="px-5 py-4 font-semibold text-slate-700"></td><td class="px-5 py-4 text-slate-400">X</td><td class="px-5 py-4 text-slate-400">X</td><td class="px-5 py-4 text-slate-400">X</td></tr></tbody></table></div></section>
-</main>
+    <section class="mt-16" aria-labelledby="session-schedule-heading">
+      <div class="mb-6 flex flex-col justify-between gap-3 sm:flex-row sm:items-end">
+        <div>
+          <p class="text-sm font-bold uppercase tracking-[0.2em] text-orange-700">Detailed sessions</p>
+          <h2 id="session-schedule-heading" class="mt-2 font-serif text-4xl font-bold text-slate-950">Learning Schedule
+          </h2>
+        </div>
+        <p class="max-w-sm text-sm leading-6 text-slate-600">Browse horizontally on smaller screens to see every session
+          column.</p>
+      </div>
+      <div class="overflow-x-auto rounded-2xl border border-orange-200 bg-white shadow-sm">
+        <table class="w-full min-w-225 border-collapse text-left text-sm">
+          <caption class="sr-only">Detailed weekly learning schedule</caption>
+          <thead>
+            <tr class="bg-slate-950 text-white">
+              <th scope="col" rowspan="2" class="border-r border-slate-700 px-5 py-4 font-semibold">Days</th>
+              <th scope="col" rowspan="2" class="border-r border-slate-700 px-5 py-4 font-semibold">Venue</th>
+              <th scope="col" class="px-5 py-4 text-center font-semibold">Morning Session</th>
+              <th scope="col" class="px-5 py-4 text-center font-semibold">Afternoon Session</th>
+              <th scope="col" class="px-5 py-4 text-center font-semibold">Afternoon Session</th>
+            </tr>
+            <tr class="bg-slate-800 text-slate-200">
+              <th scope="col" class="px-5 py-3 text-center text-xs font-semibold uppercase tracking-wider">9am-12pm</th>
+              <th scope="col" class="px-5 py-3 text-center text-xs font-semibold uppercase tracking-wider">12pm-3pm</th>
+              <th scope="col" class="px-5 py-3 text-center text-xs font-semibold uppercase tracking-wider">3pm-5:30pm
+              </th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-orange-100">
+            <tr>
+              <th scope="row" rowspan="2" class="bg-orange-50 px-5 py-4 font-bold text-orange-800">Monday</th>
+              <td class="px-5 py-4 font-semibold text-slate-700">Room1</td>
+              <td class="px-5 py-4">Html and Git</td>
+              <td class="px-5 py-4">Javascript</td>
+              <td class="px-5 py-4">Basic Computer A</td>
+            </tr>
+            <tr class="bg-amber-50/50">
+              <td class="px-5 py-4 font-semibold text-slate-700">Room2</td>
+              <td class="px-5 py-4">SQL and Video Editing</td>
+              <td class="px-5 py-4">Graphics Design</td>
+              <td class="px-5 py-4 text-slate-400">X</td>
+            </tr>
+            <tr>
+              <th scope="row" rowspan="2" class="bg-orange-50 px-5 py-4 font-bold text-orange-800">Tuesday</th>
+              <td class="px-5 py-4 font-semibold text-slate-700">Room1</td>
+              <td class="px-5 py-4">Basic Computer B</td>
+              <td class="px-5 py-4 text-slate-400">X</td>
+              <td class="px-5 py-4 text-slate-400">X</td>
+            </tr>
+            <tr class="bg-amber-50/50">
+              <td class="px-5 py-4 font-semibold text-slate-700">Room2</td>
+              <td class="px-5 py-4">SQL</td>
+              <td class="px-5 py-4 text-slate-400">X</td>
+              <td class="px-5 py-4 text-slate-400">X</td>
+            </tr>
+            <tr>
+              <th scope="row" rowspan="2" class="bg-orange-50 px-5 py-4 font-bold text-orange-800">Wednesday</th>
+              <td class="px-5 py-4 font-semibold text-slate-700">Room1</td>
+              <td class="px-5 py-4">Html and Git</td>
+              <td class="px-5 py-4">Javascript</td>
+              <td class="px-5 py-4">Basic Computer A</td>
+            </tr>
+            <tr class="bg-amber-50/50">
+              <td class="px-5 py-4 font-semibold text-slate-700">Room2</td>
+              <td class="px-5 py-4">Video Editing</td>
+              <td class="px-5 py-4">Graphic Design</td>
+              <td class="px-5 py-4 text-slate-400">X</td>
+            </tr>
+            <tr>
+              <th scope="row" rowspan="2" class="bg-orange-50 px-5 py-4 font-bold text-orange-800">Thursday</th>
+              <td class="px-5 py-4 font-semibold text-slate-700">Room1</td>
+              <td class="px-5 py-4">Basic Computer B</td>
+              <td class="px-5 py-4">A.I Powered Content Generation</td>
+              <td class="px-5 py-4 text-slate-400">X</td>
+            </tr>
+            <tr class="bg-amber-50/50">
+              <td class="px-5 py-4 font-semibold text-slate-700">Room2</td>
+              <td class="px-5 py-4">SQL and Video Editing</td>
+              <td class="px-5 py-4">Graphic Design</td>
+              <td class="px-5 py-4 text-slate-400">X</td>
+            </tr>
+            <tr>
+              <th scope="row" rowspan="2" class="bg-orange-50 px-5 py-4 font-bold text-orange-800">Friday</th>
+              <td class="px-5 py-4 font-semibold text-slate-700">Room1</td>
+              <td class="px-5 py-4">Html and Git</td>
+              <td class="px-5 py-4">Javascript</td>
+              <td class="px-5 py-4">Basic Computer A</td>
+            </tr>
+            <tr class="bg-amber-50/50">
+              <td class="px-5 py-4 font-semibold text-slate-700">Room2</td>
+              <td class="px-5 py-4">Basic Computer B</td>
+              <td class="px-5 py-4 text-slate-400">X</td>
+              <td class="px-5 py-4 text-slate-400">X</td>
+            </tr>
+            <tr>
+              <th scope="row" class="bg-orange-50 px-5 py-4 font-bold text-orange-800">Saturday</th>
+              <td class="px-5 py-4 font-semibold text-slate-700"></td>
+              <td class="px-5 py-4 text-slate-400">X</td>
+              <td class="px-5 py-4 text-slate-400">X</td>
+              <td class="px-5 py-4 text-slate-400">X</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
 
-<footer class="border-t border-orange-200 bg-amber-100 px-5 py-8 text-center text-sm text-slate-600"><p>&copy; 2026 Discipline Daily. Built for steady progress.</p></footer>
-<script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+  <footer class="border-t border-orange-200 bg-amber-100 px-5 py-8 text-center text-sm text-slate-600">
+    <p>&copy; 2026 Discipline Daily. Built for steady progress.</p>
+  </footer>
+  <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
 </body>
+
 </html>
